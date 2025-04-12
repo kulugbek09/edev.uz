@@ -1,6 +1,8 @@
+import { link } from "fs";
+
 export const navItems = [
-  { name: "About", link: "#about" },
-  { name: "Projects", link: "#projects" },
+  { name: "Biz haqimizda", link: "#about" },
+  { name: "Portfolio", link: "#projects" },
   { name: "Testimonials", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
 ];
@@ -8,7 +10,7 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
+    title: "Biz uchun har bir loyiha g‘oya va ishonch uyg‘unligidir.",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -18,7 +20,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
+    title: "Biznesingizni global miqyosga olib chiqamiz.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -28,8 +30,8 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "My tech stack",
-    description: "I constantly try to improve",
+    title: "Dasturchilar",
+    description: "Professional",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
@@ -38,7 +40,7 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
+    title: "Chiroyli va qulay UI/UX dizaynlar",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -49,8 +51,8 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
-    description: "The Inside Scoop",
+    title: "Qulay web-site va telegram botlar",
+    description: "Edev.uz",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -59,7 +61,7 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: "Do you want to start a project together?",
+    title: "Birga loyiha boshlashni xohlaysizmi?",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -72,68 +74,72 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    title: "Summarizer",
+    des: "OpenAI GPT modeli yordamida qisqacha ma'lumotlar tayyorlovchi ilova.",
+    img: "/p1.png",
+    link: "ai-summarizer-ku.netlify.app",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    title: "Gamming",
+    des: "Oyin haqida landing-page",
+    img: "/p2.png",
+    link: "https://gaming-ku.netlify.app/",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    title: "Elaro Baby",
+    des: "Elaro Baby uchun yaratilgan telegram bot",
+    img: "/p5.jpg",
+    link: "https://t.me/elarobaby_bot",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    title: "Green Leaf",
+    des: "Green Leaf uchun yaratilgan telegram bot",
+    img: "/p6.jpg",
+    link: "https://t.me/GreenLeaf_uz_Bot",
+  },
+  {
+    id: 3,
+    title: "Favvora",
+    des: "Favvora choyxonasi uchun qr codli menu",
+    img: "/p3.png",
+    link: "https://wonderful-souffle-e953f2.netlify.app/",
+  },
+  {
+    id: 4,
+    title: "Muxriddin",
+    des: "Muxriddin oshmarkazi uchun qr codli menu",
+    img: "/p4.png",
+    link: "https://dulcet-dragon-567fe0.netlify.app/",
   },
 ];
 
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Edev.uz bilan ishlash juda oson va samarali. Ularning dizayn xizmatlari aniq va estetik jihatdan mukammal. Mening biznesim uchun ideal veb-sayt yaratdilar. Har doim professional yondoshuvni ko'rsatdilar. Tavsiya qilaman!",
+    name: "Umid Zuxirddinovich",
+    title: "",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Edev.uz kompaniyasidan veb-sayt yaratish xizmatlarini olish juda yaxshi tajriba bo'ldi. Ularning jamoasi juda tez va samarali ishlaydi. Saytimizni qisqa vaqt ichida yaratib, barcha talablarimizni inobatga olishdi. Yangi loyiha uchun albatta ular bilan ishlayman.",
+    name: "Qodir Tolipov",
+    title: "",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Edev.uz kompaniyasining Telegram botidan foydalangach, xizmat olish juda osonlashdi. Bot orqali har doim tezkor javoblar oldim va sayt yaratish jarayonida har bir qadamni kuzatish imkoniga ega bo'ldim. Ularning jamoasi juda professional va yuqori sifatli xizmatlarni taqdim etadi.",
+    name: "Madina Nurhanova",
+    title: "",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Edev.uz bilan ishlash juda yaxshi tajriba bo'ldi. Ularning Telegram botidan foydalanganda, har qanday savolga javobni tezda olish imkoniyatim bo'ldi. Telegram bot jarayonida ularning jamoasi juda aniq va professionallikka asoslangan. O'zaro aloqada bo'lish juda oson.",
+    name: "Elaro baby",
+    title: "",
   },
 ];
 
@@ -173,31 +179,45 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Website",
+    desc: "Bizning jamoamiz siz uchun zamonaviy, moslashuvchan va SEO-ga moslashtirilgan veb-saytlar yaratadi. Sizning brendingizga mos keladigan, funksional va estetika jihatidan mukammal bo'lgan veb-saytlar orqali biznesingizni internetda yuqori pog‘onaga olib chiqamiz.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: "Telegram botlar",
+    desc: "Biz foydalanuvchilaringiz bilan tezkor va qulay muloqot qilish uchun zamonaviy Telegram botlarini yaratamiz. Botlarimiz avtomatlashtirilgan xizmatlar, mijoz qo'llab-quvvatlashi, buyurtmalarni boshqarish va boshqa ko'plab funksiyalarni bajaradi.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    title: "IT Konsalting",
+    desc: "Biznesingizni raqamli transformatsiya qilishda yordam beramiz. Zamonaviy texnologiyalar va yechimlar orqali biznesingiz samaradorligini oshirishga yordam beramiz.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Mobil ilovalar",
+    desc: "Biznesingizning mobil mavjudligini oshirish uchun iOS va Android platformalarida intuitiv hamda boy funksiyalarga ega mobil ilovalarni taqdim etamiz.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
+  },
+  {
+    id: 5,
+    title: "Grafik Dizayn",
+    desc: "Bizning jamoamiz siz uchun zamonaviy, moslashuvchan va SEO-ga moslashtirilgan veb-saytlar yaratadi. Sizning brendingizga mos keladigan, funksional va estetika jihatidan mukammal bo'lgan veb-saytlar orqali biznesingizni internetda yuqori pog‘onaga olib chiqamiz.",
+    className: "md:col-span-2",
+    thumbnail: "/exp1.svg",
+  },
+  {
+    id: 6,
+    title: "SMM - Ijtimoiy Tarmoqlar Marketingi",
+    desc: "Ijtimoiy tarmoqlarda brendingizni rivojlantirish va auditoriyangizni oshirish uchun professional SMM xizmatlari. Bizning jamoamiz sizning kontentingizni yoritish va mijozlar bilan muloqotni oshirishga yordam beradi.",
+    className: "md:col-span-2", // change to md:col-span-2
+    thumbnail: "/exp2.svg",
   },
 ];
 

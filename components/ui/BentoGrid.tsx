@@ -67,7 +67,7 @@ export const BentoGridItem = ({
   };
 
   const handleCopy = () => {
-    const text = "hsu@jsmastery.pro";
+    const text = "https://t.me/FDevProg";
     navigator.clipboard.writeText(text);
     setCopied(true);
   };
@@ -184,7 +184,7 @@ export const BentoGridItem = ({
               </div>
 
               <MagicButton
-                title={copied ? "Email is Copied!" : "Copy my email address"}
+                title={copied ? "Username is Copied!" : "Copy our Telegram username"}
                 icon={<IoCopyOutline />}
                 position="left"
                 handleClick={handleCopy}
